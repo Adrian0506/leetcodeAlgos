@@ -3,7 +3,6 @@ class Solution:
         l, r = 0, len(arr) - 1
         while l < r:
             midPoint = (l + r) // 2
-            print(arr[midPoint])
             if arr[midPoint] > arr[midPoint - 1] and arr[midPoint] > arr[midPoint + 1]:
                 return midPoint
             if arr[midPoint] > arr[midPoint - 1]:
